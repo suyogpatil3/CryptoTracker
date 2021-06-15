@@ -67,7 +67,7 @@ function App() {
         <br/>
         <form className="formStyle">
         <input className = "search"type="text" onChange = {handleChange} placeholder="Search"/>
-        <select style={{width:"7.5em"}} onChange={getCountry}>
+        <select style={{maxWidth:"7.5em",maxHeight:"3em"}} onChange={getCountry}>
         <option value="usd">Dollars(USD)</option>
         <option value="inr" >Rupees(INR)</option>
         </select>
