@@ -6,8 +6,6 @@ import bDark from '../images/bDark.svg';
 import bLight from '../images/bLight.svg';
 import dark from '../images/dark.png';
 import light from '../images/light.png';
-import rupee from '../images/rupee.png';
-import dollar from '../images/dollar.png';
 
 var url = "";
 
@@ -69,9 +67,9 @@ function App() {
         <br/>
         <form className="formStyle">
         <input className = "search"type="text" onChange = {handleChange} placeholder="Search"/>
-        <select onChange={getCountry}>
-          <option value="inr">INR<img alt="INR" src={rupee}/></option>
-          <option value="usd">USD<img alt="USD" src={dollar}/></option>
+        <select style={{width:"7.5em"}} onChange={getCountry}>
+        <option value="usd">Dollars(USD)</option>
+        <option value="inr" >Rupees(INR)</option>
         </select>
         </form>
       </div>

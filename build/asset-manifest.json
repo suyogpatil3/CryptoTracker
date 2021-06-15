@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/CryptoTracker/static/css/main.d7cd7ae7.chunk.css",
+    "main.js": "/CryptoTracker/static/js/main.e6b86459.chunk.js",
+    "main.js.map": "/CryptoTracker/static/js/main.e6b86459.chunk.js.map",
+    "runtime-main.js": "/CryptoTracker/static/js/runtime-main.bc846cc0.js",
+    "runtime-main.js.map": "/CryptoTracker/static/js/runtime-main.bc846cc0.js.map",
+    "static/css/2.61b4cb56.chunk.css": "/CryptoTracker/static/css/2.61b4cb56.chunk.css",
+    "static/js/2.a1d5bd63.chunk.js": "/CryptoTracker/static/js/2.a1d5bd63.chunk.js",
+    "static/js/2.a1d5bd63.chunk.js.map": "/CryptoTracker/static/js/2.a1d5bd63.chunk.js.map",
+    "index.html": "/CryptoTracker/index.html",
+    "static/css/2.61b4cb56.chunk.css.map": "/CryptoTracker/static/css/2.61b4cb56.chunk.css.map",
+    "static/css/main.d7cd7ae7.chunk.css.map": "/CryptoTracker/static/css/main.d7cd7ae7.chunk.css.map",
+    "static/js/2.a1d5bd63.chunk.js.LICENSE.txt": "/CryptoTracker/static/js/2.a1d5bd63.chunk.js.LICENSE.txt",
+    "static/media/bDark.6296a462.svg": "/CryptoTracker/static/media/bDark.6296a462.svg",
+    "static/media/bLight.0b658707.svg": "/CryptoTracker/static/media/bLight.0b658707.svg",
+    "static/media/light.a47c50b7.png": "/CryptoTracker/static/media/light.a47c50b7.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bc846cc0.js",
+    "static/css/2.61b4cb56.chunk.css",
+    "static/js/2.a1d5bd63.chunk.js",
+    "static/css/main.d7cd7ae7.chunk.css",
+    "static/js/main.e6b86459.chunk.js"
+  ]
+}
