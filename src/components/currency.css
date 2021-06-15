@@ -96,10 +96,10 @@ td{
 }
 select{
     height:3em;
-    width:7em;
+    width:7.5em;
     text-align: center;
     background-color: thistle;
-    font-size: 2em;
+    font-size: 1em;
     font-weight: 500;
 }
 .logo{
@@ -121,21 +121,9 @@ table thead th {
     background: white;
   }
 html{
-    min-width: 55em;
+    min-width: 60em;
     height: 100%;
 }
-table thead th:first-child {
-    position: sticky;
-    left: 0;
-    z-index: 2;
-  }
-  table tbody th {
-    position: sticky;
-    left: 0;
-    background: white;
-    z-index: 1;
-    
-  }
 .rowbg{
     text-align: center;
     color: aliceblue;
