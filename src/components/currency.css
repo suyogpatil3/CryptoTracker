@@ -56,6 +56,9 @@ td{
     width:20em; 
     text-align: center;
     font-size: 1em;
+    border-radius: 2%;
+    border-color: #694a9c;
+    border-width: 2px;
 }
 #image{
     width:40px;
@@ -141,12 +144,39 @@ html{
     padding:0px;
     min-height: 100em;
 }
-.info{
-    float:initial;
-    margin-right: 5em;
-    margin-top:1em;
-}
+
 .name{
    
     text-align: start;
 }
+
+/* <div class="hide col-md-2 col-sm-2 col-lg-2">This site provides data for over a 100 cryptocurrencies.Data is updated automatically whenever it is received without refresshing the page!</div> 
+<img alt="img" src={info} class="myDIV col-md-1 col-sm-1 col-lg-1"/> */
+/* .info{
+    float:right;
+    margin-right: 5em;
+    margin-top:1em;
+}  */
+ /* .hide {
+    display: none;
+    background-color: aliceblue;
+  }
+    .myDIV:hover + .hide {
+      width:100px;
+      max-height:90px;
+     
+    display: block;
+    color: red;
+    z-index: 3;
+  } */
+  /* .myDIV{
+      display: flex;
+    margin-top: 1.5em;
+
+    margin-right: 0em;
+    justify-content:flex-start ;
+    border-radius: 100%;
+    background:linear-gradient(275deg, #d68f31 0%, #fbb22ba9 74%); 
+    width:1em;
+    height: auto;
+  } */

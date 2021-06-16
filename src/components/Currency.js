@@ -9,7 +9,7 @@ const currency = ({currencyImage,currencyName,currencyLogo,price,priceChange,mar
         <>
             <tr className="rowStyle">
                   <td  id="image"> <img src={currencyImage} className="img" alt="cryptoImage"/> </td>    
-                   <td class="name"> 
+                   <td className="name"> 
                    <h2 className="h3">{currencyName}</h2>     <span className="">{currencyLogo}</span>
                   </td> 
                     <td className = "currencyPrice">{price.toLocaleString()}</td>

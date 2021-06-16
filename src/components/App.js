@@ -15,6 +15,7 @@ function App() {
   const [error,setError] = useState('');
   const [currency,setCurrency] = useState([]);
   const [country,setCountry] = useState('');
+
   const[value,setValue] = useState(false);
   const[mode,setMode] = useState(false);
  
@@ -32,14 +33,13 @@ function App() {
               }})
         .then(data =>{
               setCurrency(data);
-              console.log("Dataupdated");
             })
         .catch(error => {
           setError(`HTTP error status:${error}`);
         })
     }
     fetchData()
-    const interval = setInterval(() => fetchData(), 5000)
+    const interval = setInterval(() => fetchData(), 3000)
     return () => {
       clearInterval(interval);
     }
