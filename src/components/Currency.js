@@ -8,7 +8,7 @@ const currency = ({currencyImage,currencyName,currencyLogo,price,priceChange,mar
     return (
         <>
             <tr className="rowStyle">
-                  <td id="image"> <img src={currencyImage} className="img" alt="cryptoImage"/> </td>    
+                  <td  id="image"> <img src={currencyImage} className="img" alt="cryptoImage"/> </td>    
                    <td class="name"> 
                    <h2 className="h3">{currencyName}</h2>     <span className="">{currencyLogo}</span>
                   </td> 

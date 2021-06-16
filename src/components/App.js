@@ -15,27 +15,35 @@ function App() {
   const [error,setError] = useState('');
   const [currency,setCurrency] = useState([]);
   const [country,setCountry] = useState('');
-
   const[value,setValue] = useState(false);
   const[mode,setMode] = useState(false);
+ 
 
   useEffect(() => {
-    if(country==='' || country === 'inr')
-    url="https://api.coingecko.com/api/v3/coins/markets?vs_currency=inr&order=market_cap_desc&per_page=100&page=1&sparkline=false";
-    else url = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false"
-    fetch(url)
-    .then(res => {
-      if(res.ok){
-      return res.json();
-    }})
-    .then(data =>{
-      setCurrency(data);
-    })
-    .catch(error => {
-      setError(`HTTP error status:${error}`);
-    })
-
-  }, [country]);
+    function fetchData() {
+      if(country==='' || country === 'inr')
+        url="https://api.coingecko.com/api/v3/coins/markets?vs_currency=inr&order=market_cap_desc&per_page=100&page=1&sparkline=false";
+        else 
+        url = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false"
+         fetch(url)
+        .then(res => {
+                if(res.ok){
+                return res.json();
+              }})
+        .then(data =>{
+              setCurrency(data);
+              console.log("Dataupdated");
+            })
+        .catch(error => {
+          setError(`HTTP error status:${error}`);
+        })
+    }
+    fetchData()
+    const interval = setInterval(() => fetchData(), 5000)
+    return () => {
+      clearInterval(interval);
+    }
+}, [country]);
 
   const getCountry = (e) =>{
     setCountry(e.target.value);
@@ -53,7 +61,6 @@ function App() {
     (mode===false)? a.innerText = "Light mode": a.innerText = "Dark mode";
   }
 
-
   const searchResults = currency.filter(crypto =>{
     return crypto.name.toLowerCase().includes(search.toLowerCase())
   })
@@ -61,8 +68,9 @@ function App() {
   return (
     <div className={mode ? "rowbg" : "rowbgL"} >
       <div className="row">
-        <div>
-        <img className="logo" alt="img" src={mode ? bDark : bLight }/><p id={mode ? "h1" : "h1L"}>Crypto Tracker</p><img alt="img" src={mode ? light: dark } id = "mode" onClick = {switchMode}/>
+        <div className="">
+        <img className="logo" alt="img" src={mode ? bDark : bLight }/><p id={mode ? "h1" : "h1L"}>Crypto Tracker</p> 
+        <img alt="img" src={mode ? light: dark } id = "mode" onClick = {switchMode}/>
         </div>
         <br/>
         <form className="formStyle">
